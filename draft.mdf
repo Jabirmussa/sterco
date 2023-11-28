@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/sterco.svg" type="image/x-icon">
+    
+    <title>Ster.co</title>
+</head>
+<body>
+
+    <header class="fixed">
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="/assets/images/sterco.svg" alt="logo"></a>
+            </div>
+            <input type="checkbox" id="nav_check" hidden>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Caves</a></li>
+                <li><a href="#">Over ons</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+    
+    <section class="hero">
+        
+        <!-- <div class="container"> -->
+            <section class="wrapper">
+                <div class="texto-main">
+                    <h1 class="word-1">Your <span class="cor word-2">process in</span> <br>shape<span class="word-3">.</span></h1>
+                    <div class="botao">
+                        <button type="button">Get Me That</button>
+                    </div>
+                </div>
+            </section>
+
+                    <section class="wrapper wrapper-text wrapper-image">
+                    <div id="bg">
+                        <div class="content" id="text">
+                            <h3>Lorem ipsum dolor sit<span>.</span></h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <a href="#" class="call">Get Me That</a>
+                        </div>
+                        <div class="box">
+
+                            <div class="box-bg">
+                                <img src="assets/images/orange.svg" alt="">      
+                             </div>
+
+                            <div class="box-img cover-image">
+                                <svg class="svg">
+        
+                                     <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0.963,0.757 L1,0.328 C1,0.303,0.992,0.279,0.97,0.264 L0.582,0.016 C0.561,0.002,0.534,0,0.51,0.01 L0.084,0.194 C0.059,0.204,0.043,0.226,0.041,0.251 L0.002,0.68 C0,0.705,0.012,0.729,0.034,0.743 L0.422,0.992 C0.443,1,0.47,1,0.494,0.997 L0.92,0.814 C0.945,0.804,0.961,0.782,0.963,0.757"></path></clipPath>
+                                </svg>
+                                <img src="assets/images/happy-fit-people-running-and-jogging-together-in-s-2021-08-26-17-34-11-utc.png" alt="">
+                            </div>
+                        </div>
+                        <!-- <div class="box" id="triangle">
+
+                            <div class="box-bg">
+                                <img src="assets/images/shape2.svg" alt="">      
+                             </div>
+
+                            <div class="box-img cover-image">
+                                <svg class="svg">
+        
+                                     <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0.817,0.027 L0.047,0.494 C0,0.523,0.004,0.59,0.054,0.613 L0.911,1 C0.961,1,1,0.995,1,0.942 L0.927,0.079 C0.922,0.028,0.863,0,0.817,0.027"></path></clipPath>
+                                </svg>
+                                <img src="assets/images/spider-man dp.jpeg" alt="">
+                            </div>
+                        </div> -->
+                    </div> 
+                </section>
+
+    <section class="quote wrapper">
+        <div class="text">
+            <h1>Our latest Cases<span>.</span></h1>
+        </div>
+
+        <!-- Card Hover -->
+       <div class="pics wrapper cover-image">
+        <div class="card">
+            <img class="background" src="/assets/images/spider-man 01.jpeg" alt="">
+    
+            <div class="card-content">
+                <div class="texto">
+                    
+                <h1 class="title">1 Casename and title</h1>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Vitae velit consectetur,
+                     facilis laborum iure provident 
+                     fugiat dolorum quo eligendi dolore</span></p>
+                     <a href="#">More About This</a>
+            </div>
+    
+            </div>
+            <div class="backdrop"></div>
+          </div>
+    
+          <div class="card active">
+            <img class="background" src="/assets/images/spider-man dp.jpeg" alt="">
+    
+            <div class="card-content">
+                <div class="texto">
+                    
+                <h1 class="title">Casename and title</h1>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Vitae velit consectetur,
+                     facilis laborum iure provident 
+                     fugiat dolorum quo eligendi dolore</span></p>
+                     <a href="#">More About This</a>
+            </div>
+            </div>
+            <div class="backdrop"></div>
+          </div>
+    
+          <div class="card">
+            <img class="background" src="/assets/images/baldurs-gate-3 01.jpg" alt="">
+    
+            <div class="card-content">
+              <div class="texto">
+                    
+                <h1 class="title">2 Casename and title</h1>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Vitae velit consectetur,
+                     facilis laborum iure provident 
+                     fugiat dolorum quo eligendi dolore</span>
+                </p>
+                     <a href="#">More About This</a>
+            </div>
+            </div>
+            <div class="backdrop"></div>
+          </div>
+          </div>
+       </div>
+       <!-- Fim Card Hover -->
+    </section>
+
+    <section class="ground">
+        <main></main>
+        <div class="aspas"><span>“</span></div>
+        <div class="ban">
+            <h2>Lorem ipsum sit dolor sit amet abuis pers dor Por quero<span>.</span></h2>
+            <p><span>.</span>Firstname and company </p>
+       </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="information">
+            <h3>More information, or do you need some advice<span>?</span></h3>
+            <a href="" class="call">CALL OUR JOHAN</a>
+        </div>
+        <div class="image">
+            <img src="/assets/images/Guy.png" alt="">
+        </div>
+</section>
+
+</section>
+
+
+<footer class="footer-login">
+    <div class="box-footer">
+        <div class="logo">
+            <a href="#"><img src="/assets/images/stercof.svg" alt="logo" srcset=""></a>
+         
+            <div class="box-single1">
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Links</a></li>
+                    <li><a href="#">Volg Ons</a></li>
+            </div>
+            
+        </div>
+        <div class="box-single">
+            <ul>
+                <li><a href="#"><strong>Spijkervast</strong></a></li>
+                <li><a href="#">Info@spijkervast.nl</a></li>
+                <li><a href="#">Ruurloseweg 25</a></li>
+                <li><a href="#">Zelhem</a></li>
+            </ul>
+            <ul id="underline">
+                <li><a href="#">Projecttitel  </a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Projecttitel</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+            <ul id="underline">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+
+        </div>
+        
+    </div>
+   
+</footer>
+<div class="right">
+    <p>Copyright 2023 - Ster.co</p>
+</div>
+</body>
+
+<script src="App.js" defer></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    defer
+  ></script>
+</html>

@@ -1,0 +1,207 @@
+$blue: #2697ff;
+$green: #27ae60;
+$black: #060843;
+$grey: #f5f6fa;
+$light-color: #666;
+$orange: #D96827;
+
+header {
+    background: #fff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    transition: all 0.3s ease-in-out;
+
+    .logo img {
+        width: 90px;
+    }
+
+    nav ul {
+        display: flex;
+        li {
+            margin: 0 4px;
+            a {
+                margin: 0 10px;
+                transition: 0.2s;
+                font-family: mose;
+                color: $black;
+
+                &:hover,
+                &:active {
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    .hamburger {
+        cursor: pointer;
+        display: none;
+
+        div {
+            width: 30px;
+            height: 3px;
+            margin: 5px 0;
+            background: $black;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        padding: 0 30px;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .hamburger {
+            display: block;
+        }
+
+        nav,
+        &.fixed nav {
+            position: absolute;
+            width: 100%;
+            left: -100%;
+            top: 70px;
+            width: 100%;
+            background: $orange;
+            padding: 30px;
+            transition: 0.3s;
+        }
+
+        #nav_check:checked ~ nav {
+            left: 0;
+        }
+
+        nav ul {
+            display: block;
+            li a {
+                margin: 5px 0;
+            }
+        }
+    }
+}
+
+@mixin card-styles {
+    min-width: 66px;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-grow: 2;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    --transition-timing: 0.25s;
+
+    &.active {
+        flex-grow: 100;
+    }
+
+    .background {
+        position: absolute;
+        inset: 0;
+        object-fit: cover;
+        object-position: left;
+        filter: brightness(0.8);
+        z-index: -1;
+        transition: var(--transition-timing) ease;
+        border-radius: 20px;
+
+        &.active {
+            filter: brightness(1) grayscale(0);
+        }
+    }
+
+    .card-content {
+        position: absolute;
+        left: 10px;
+        overflow: hidden;
+        bottom: -15px;
+        transition: var(--transition-timing);
+
+        * {
+            transition: var(--transition-timing);
+        }
+
+        .profile-image {
+            min-width: 50px;
+            max-width: 50px;
+            height: 50px;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            overflow: hidden;
+
+            &.active {
+                border: 1px solid rgb(110, 252, 205);
+            }
+
+            svg {
+                stroke: #fefefe;
+
+                &.active {
+                    stroke: rgb(110, 252, 205);
+                }
+            }
+        }
+
+        .title {
+            white-space: pre;
+            margin-left: 10px;
+            translate: 0 100%;
+            opacity: 0;
+            transition-delay: 0.3s;
+            color: $grey;
+            display: none;
+
+            &.active {
+                opacity: 1;
+                translate: 0 0;
+            }
+        }
+
+        .backdrop {
+            position: absolute;
+            border-radius: 20px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100px;
+            z-index: -1;
+            background: transparent linear-gradient(180deg, $black 0%, $black 100%);
+        }
+    }
+}
+
+.card {
+    @include card-styles;
+}
+
+@media only screen and (min-width: 960px) {
+    .card {
+        min-width: 150px;
+        height: 100%;
+        border-radius: 20px;
+        display: flex;
+        flex-grow: 1;
+        cursor: pointer;
+        position: relative;
+        transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        --transition-timing: 0.25s;
+    }
+}
+
+.pics {
+    height: 310px;
+    display: flex;
+    gap: 5px;
+
+    @media only screen and (min-width: 960px) {
+        height: 410px;
+        display: flex;
+        gap: 10px;
+    }
+}

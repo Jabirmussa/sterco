@@ -1,0 +1,176 @@
+header {
+  background: #fff;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  transition: all 0.3s ease-in-out;
+}
+header .logo img {
+  width: 90px;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  margin: 0 4px;
+}
+header nav ul li a {
+  margin: 0 10px;
+  transition: 0.2s;
+  font-family: mose;
+  color: #060843;
+}
+header nav ul li a:hover, header nav ul li a:active {
+  color: #D96827;
+}
+header .hamburger {
+  cursor: pointer;
+  display: none;
+}
+header .hamburger div {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background: #060843;
+}
+@media only screen and (max-width: 900px) {
+  header {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header .hamburger {
+    display: block;
+  }
+  header nav, header.fixed nav {
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 70px;
+    width: 100%;
+    background: #D96827;
+    padding: 30px;
+    transition: 0.3s;
+  }
+  header #nav_check:checked ~ nav {
+    left: 0;
+  }
+  header nav ul {
+    display: block;
+  }
+  header nav ul li a {
+    margin: 5px 0;
+  }
+}
+
+.card {
+  min-width: 66px;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-grow: 2;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  --transition-timing: 0.25s;
+}
+.card.active {
+  flex-grow: 100;
+}
+.card .background {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: left;
+  filter: brightness(0.8);
+  z-index: -1;
+  transition: var(--transition-timing) ease;
+  border-radius: 20px;
+}
+.card .background.active {
+  filter: brightness(1) grayscale(0);
+}
+.card .card-content {
+  position: absolute;
+  left: 10px;
+  overflow: hidden;
+  bottom: -15px;
+  transition: var(--transition-timing);
+}
+.card .card-content * {
+  transition: var(--transition-timing);
+}
+.card .card-content .profile-image {
+  min-width: 50px;
+  max-width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.card .card-content .profile-image.active {
+  border: 1px solid rgb(110, 252, 205);
+}
+.card .card-content .profile-image svg {
+  stroke: #fefefe;
+}
+.card .card-content .profile-image svg.active {
+  stroke: rgb(110, 252, 205);
+}
+.card .card-content .title {
+  white-space: pre;
+  margin-left: 10px;
+  translate: 0 100%;
+  opacity: 0;
+  transition-delay: 0.3s;
+  color: #f5f6fa;
+  display: none;
+}
+.card .card-content .title.active {
+  opacity: 1;
+  translate: 0 0;
+}
+.card .card-content .backdrop {
+  position: absolute;
+  border-radius: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  z-index: -1;
+  background: transparent linear-gradient(180deg, #060843 0%, #060843 100%);
+}
+
+@media only screen and (min-width: 960px) {
+  .card {
+    min-width: 150px;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-grow: 1;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    --transition-timing: 0.25s;
+  }
+}
+.pics {
+  height: 310px;
+  display: flex;
+  gap: 5px;
+}
+@media only screen and (min-width: 960px) {
+  .pics {
+    height: 410px;
+    display: flex;
+    gap: 10px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
