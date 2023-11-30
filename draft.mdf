@@ -217,3 +217,232 @@
     defer
   ></script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/stlyle1.css">
+    <title>ster.co1</title>
+</head>
+<body>
+    <header class="fixed">
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="/assets/images/sterco.svg" alt="logo"></a>
+            </div>
+            <input type="checkbox" id="nav_check" hidden>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Caves</a></li>
+                <li><a href="#">Over ons</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+
+        <section class="container">
+            <section id="conteudo">
+                <div class="afastar"></div>
+                <section class="texto4">
+                    
+                    <h2>All Our Cases <span>.</span></h2>
+                    <p id="text-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.</p>
+                </section>
+                        <section class="box-container">
+
+                            <div class="box cover-image">
+                                <div class="box-image">
+                                    <img src="/assets/images/spider-man 01.jpeg" alt="">
+                                </div>
+                               
+                                  <div class="">
+                                    <h3>Casename and</h3>
+                                    <p>Lorem ipsum dolor sit amet, conetur dipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                    <a href="#" class="Botao">MORE ABOUT THIS</a>
+                                 </div>
+                                 <div class="backdrop"></div>
+                            </div>
+                           
+                    
+                            <div class="box cover-image">
+                                <div class="box-image">
+                                    <img src="/assets/images/elden-ring 01.jpg" alt="">
+                                </div>
+
+                                <div class="">
+                                    <h3>Casename and</h3>
+                                <p>Lorem ipsum dolor sit amet, conetur dipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                <a href="#" class="Botao">MORE ABOUT THIS</a>
+                                </div>
+                                
+                            </div>
+
+                            <div class="box cover-image">
+                                
+                                <div class="box-image">
+                                    <img src="/assets/images/elden-ring dp.jpg" alt="">
+                                </div>
+                                
+                                <h3>Casename and</h3>
+                                <p>Lorem ipsum dolor sit amet, conetur dipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                <a href="#" class="Botao">MORE ABOUT THIS</a>
+                            </div>
+
+                            <div class="box cover-image">
+                                <div class="box-image">
+                                    <img src="/assets/images/god-of-war dp.jpg" alt="">
+                                </div>
+                                <h3>Casename and</h3>
+                                <p>Lorem ipsum dolor sit amet, conetur dipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                <a href="#" class="Botao">MORE ABOUT THIS</a>
+                            </div>
+
+                            <div class="box cover-image">
+                                <div class="box-image">
+                                    <img src="/assets/images/boy.jpg" alt="">
+                                </div>
+                                <h3>Casename and</h3>
+                                <p>Lorem ipsum dolor sit amet, conetur dipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                <a href="#" class="Botao">MORE ABOUT THIS</a>
+                            </div>
+
+                            <div class="box cover-image">
+                                <div class="box-image">
+                                    <img src="/assets/images/The-Last-Of-Us 01.jpg" alt="">
+                                </div>
+                                <h3>Casename and</h3>
+                                <p>Lorem ipsum dolor sit amet, conetur dipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                <a href="#" class="Botao">MORE ABOUT THIS</a>
+                            </div>
+                            <div class="box cover-image">
+                                <div class="box-image">
+                                    <img src="/assets/images/god-of-war 01.jpg" alt="">
+                                </div>
+                                <h3>Casename and</h3>
+                                <p>Lorem ipsum dolor sit amet, conetur dipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                <a href="#" class="Botao">MORE ABOUT THIS</a>
+                            </div>
+                            <div class="box cover-image">
+                                <div class="box-image">
+                                    <img src="/assets/images/spider-man dp.jpeg" alt="">
+                                </div>
+                                <h3>Casename and</h3>
+                                <p>Lorem ipsum dolor sit amet, conetur dipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                <a href="#" class="Botao">MORE ABOUT THIS</a>
+                            </div>
+                            <div class="box cover-image">
+                                <div class="box-image">
+                                    <img src="/assets/images/boy.jpg" alt="">
+                                </div>
+                                <h3>Casename and</h3>
+                                <p>Lorem ipsum dolor sit amet, conetur dipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                <a href="#" class="Botao">MORE ABOUT THIS</a>
+                            </div>
+                            </section>
+                    
+                        </div>
+                </div>
+            </section>
+         
+    </section>
+    <section class="ground">
+        <div class="aspas"><span>“</span></div>
+
+        <div class="ban">
+            
+            <h2>Lorem ipsum sit dolor sit amet abuis pers dor Por quero<span>.</span></h2>
+            <p><span>.</span>Firstname and company </p>
+       </div>
+    </section>
+       
+    <section class="slide">
+            <div class="information">
+                <h3>More information, or do you need some advice<span>?</span></h3>
+                <a href="" class="call">CALL OUR JOHAN</a>
+            </div>
+            <div class="image">
+                <img src="/assets/images/Guy.png" alt="">
+            </div>
+    </section>
+    <div class="devider"></div>
+    <footer class="footer-login">
+        <div class="box-footer">
+            <div class="logo">
+                <a href="#"><img src="/assets/images/stercof.svg" alt="logo" srcset=""></a>
+             
+                <div class="box-single1">
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Links</a></li>
+                        <li><a href="#">Volg Ons</a></li>
+                </div>
+                
+            </div>
+            <div class="box-single">
+                <ul>
+                    <li><a href="#"><strong>Spijkervast</strong></a></li>
+                    <li><a href="#">Info@spijkervast.nl</a></li>
+                    <li><a href="#">Ruurloseweg 25</a></li>
+                    <li><a href="#">Zelhem</a></li>
+                </ul> 
+                <ul id="underline">
+                    <li><a href="#">Projecttitel  </a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Projecttitel</a></li>
+                    <li><a href="#">Project</a></li>
+                </ul>
+                <ul id="underline">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+
+            </div>
+
+            
+        </div>
+       
+    </footer>
+    <div class="right">
+        <p>Copyright 2023 - Ster.co</p>
+    </div>
+               
+    </div>
+    
+    
+
+</body>
+
+<script src="App.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    defer
+  ></script>
+</html>

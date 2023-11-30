@@ -1,3 +1,15 @@
+const Header = document.querySelector("header")
+window.addEventListener("scroll",()=>{
+  console.log('scrolling')
+  console.log(window.scrollY)
+  if(window.scrollY>0){
+     Header.classList.add("headeractive")
+  }else{
+    Header.classList.remove("headeractive")
+  }
+     
+})
+
 
 
 const cardsContainer = document.querySelector(".pics");
@@ -32,43 +44,39 @@ cardsContainer.addEventListener("mouseout", () => {
 
 
 
-window.addEventListener("scroll", function(){
-     var header = document.querySelector("header");
-     header.classList.toggle("fixed", window.scrollY > 0);
-})
 
-// GSAP
-const tl = gsap.timeline ({
-  defaults: { duration: 0.75, ease: "Power3.easeout" },
-});
+// // GSAP
+// const tl = gsap.timeline ({
+//   defaults: { duration: 0.75, ease: "Power3.easeout" },
+// });
 
-tl.fromTo(
-  ".word-1",
-  { x: "100%", opacity: 0 },
-  { x: "0%", opacity: 1 },
-  "<20%"
-);
+// tl.fromTo(
+//   ".word-1",
+//   { x: "100%", opacity: 0 },
+//   { x: "0%", opacity: 1 },
+//   "<20%"
+// );
 
-tl.fromTo(
-  ".word-2",
-  { y: "100%", opacity: 0 },
-  { y: "0%", opacity: 1 },
-  "<20%"
-);
+// tl.fromTo(
+//   ".word-2",
+//   { y: "100%", opacity: 0 },
+//   { y: "0%", opacity: 1 },
+//   "<20%"
+// );
 
-tl.fromTo(
-  ".word-3",
-  { x: "-100%", opacity: 0 },
-  { x: "0%", opacity: 1 },
-  "<20%"
-);
+// tl.fromTo(
+//   ".word-3",
+//   { x: "-100%", opacity: 0 },
+//   { x: "0%", opacity: 1 },
+//   "<20%"
+// );
 
-tl.fromTo(
-  ".text-2",
-  { y: "100%", opacity: 0 },
-  { y: "0%", opacity: 1 },
-  "<20%"
-);
+// tl.fromTo(
+//   ".text-2",
+//   { y: "100%", opacity: 0 },
+//   { y: "0%", opacity: 1 },
+//   "<20%"
+// );
 // tl.fromTo(".word-4", {}, {});
 // tl.fromTo(".word-5", {}, {});
 // tl.fromTo(".word-6", {}, {});
