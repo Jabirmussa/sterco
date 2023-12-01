@@ -623,7 +623,7 @@ img {
     position: absolute;
     inset: 0;
     object-fit: cover;
-     object-position: left; 
+     object-position: center; 
       filter: brightness(0.8); 
      z-index: -1; 
     transition: var(--transition-timing) ease;
@@ -635,7 +635,7 @@ img {
         position: absolute; 
         inset: 0;
         object-fit: cover;
-        object-position: left;
+        object-position: center;
         filter: brightness(0.8);
         z-index: -1; 
         transition: var(--transition-timing) ease;
@@ -760,7 +760,6 @@ img {
 
 .pics .card .texto h1 {
     font-family: meu;
-    margin-top: 320px;
     padding-left: 56px;
     width: 345px;
     color: var(--orange);
@@ -951,7 +950,7 @@ ul{
 }
 .footer-col{
    width: 25%;
-   padding: 0 15px;
+   /* padding: 0 15px; */
 }
 .footer-col h4{
 	font-size: 22px;
@@ -1035,11 +1034,51 @@ ul{
 }
 
 @media(max-width: 767px){
+    .wrapper .text-image-left .text-content h1{
+        color: var(--black);
+    }
+    .card.active {
+        flex-grow: 12;
+    
+    }
+    .card {
+        overflow: hidden;
+        /* min-width: 4%; */
+        height: 100%;
+        border-radius: 20px;
+        display: flex;
+        flex-grow: 2.3;
+        /* max-width: calc(33.3333% - 20px); */
+        /* flex: 1;
+        margin: 10px; */
+        cursor: pointer;
+        position: relative;
+        transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        --transition-timing: 0.25s;
+    }    
+
+    .pics .card .texto {
+        margin-left: -50px;
+    }
     .slide .wrapper .image img {
         border-radius: 100%;
         transform: scale(0.33) skew(0deg) translate(-53px, -1178px);
     }
+    .patern .patern-text {
+        margin-top: 87px;
+        width: 121%;
+    }
+    .patern .quote {
+        display: block;
+        font-size: 140px;
+    }
 
+    .patern .patern-text h2 {
+        font-size: 38px;
+    }
+    .wrapper .information {
+        margin-top: 148px;
+    }
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
@@ -1081,4 +1120,12 @@ ul{
 }
 }
 
-
+  @media (max-width: 767px) {
+    /* Adjust the grid for smaller screens */
+    .pics {
+        display: grid;
+      grid-template-columns: 1fr;
+      gap: 80px;
+    }
+  }
+  

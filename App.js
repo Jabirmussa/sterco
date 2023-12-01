@@ -12,6 +12,7 @@ window.addEventListener("scroll",()=>{
 
 
 
+
 const cardsContainer = document.querySelector(".pics");
 
 cardsContainer.addEventListener("mouseover", (e) => {
@@ -22,7 +23,7 @@ cardsContainer.addEventListener("mouseover", (e) => {
   cardsContainer.querySelectorAll(".card").forEach((card) => {
     const cardContent = card.querySelector(".card-content");
     if (card !== target && cardContent) {
-      card.classList.remove("active"); 
+      card.classList.remove("active");
       cardContent.style.opacity = 0; 
     } else {
       card.classList.add("active"); 
