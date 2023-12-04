@@ -40,7 +40,7 @@ body {
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(208,208,220) 50%, rgb(213 213 224) 100%);
 }
 
-body .nav-open {
+body.nav-open {
     overflow: hidden;
 }
 
