@@ -45,26 +45,25 @@ cardsContainer.addEventListener("mouseout", () => {
 
 
 
-const nav = document.querySelector(".header"),
-  navCloseBtn = document.querySelector(".navCloseBtn");
 
-searchIcon.addEventListener("click", () => {
-  header.classList.toggle("openSearch");
-  header.classList.remove("openNav");
-  if (header.classList.contains("openSearch")) {
-    return searchIcon.classList.replace("uil-search", "uil-times");
-  }
-  searchIcon.classList.replace("uil-times", "uil-search");
-});
 
-navOpenBtn.addEventListener("click", () => {
-  nav.classList.add("openNav");
-  nav.classList.remove("openSearch");
-  searchIcon.classList.replace("uil-times", "uil-search");
-});
+document.addEventListener("DOMContentLoaded", function () {
+  const navCheck = document.getElementById("nav_check");
+  const navCloseBtn = document.querySelector(".navCloseBtn");
+  const body = document.body;
 
-navCloseBtn.addEventListener("click", () => {
-  nav.classList.remove(".nav");
+  navCloseBtn.addEventListener("click", function () {
+    navCheck.checked = false;
+    body.classList.remove("nav-open");
+  });
+
+  navCheck.addEventListener("change", function () {
+    if (navCheck.checked) {
+      body.classList.add("nav-open");
+    } else {
+      body.classList.remove("nav-open");
+    }
+  });
 });
 
 
