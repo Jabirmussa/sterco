@@ -1,3 +1,23 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const navCheck = document.getElementById("nav_check");
+  const navCloseBtn = document.querySelector(".navCloseBtn");
+  const body = document.body;
+
+  navCloseBtn.addEventListener("click", function () {
+    navCheck.checked = false;
+    body.classList.remove("nav-open");
+  });
+
+  navCheck.addEventListener("change", function () {
+    if (navCheck.checked) {
+      body.classList.add("nav-open");
+    } else {
+      body.classList.remove("nav-open");
+    }
+  });
+});
+
+
 const Header = document.querySelector("header")
 window.addEventListener("scroll",()=>{
   console.log('scrolling')
@@ -9,8 +29,6 @@ window.addEventListener("scroll",()=>{
   }
      
 })
-
-
 
 
 const cardsContainer = document.querySelector(".pics");
@@ -45,26 +63,6 @@ cardsContainer.addEventListener("mouseout", () => {
 
 
 
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const navCheck = document.getElementById("nav_check");
-  const navCloseBtn = document.querySelector(".navCloseBtn");
-  const body = document.body;
-
-  navCloseBtn.addEventListener("click", function () {
-    navCheck.checked = false;
-    body.classList.remove("nav-open");
-  });
-
-  navCheck.addEventListener("change", function () {
-    if (navCheck.checked) {
-      body.classList.add("nav-open");
-    } else {
-      body.classList.remove("nav-open");
-    }
-  });
-});
 
 
 // // GSAP
