@@ -79,7 +79,6 @@ html::-webkit-scrollbar-thumb {
     color: #FFF;
     text-transform: uppercase;
     border-radius: 24px;
-    text-align: center;
     font-size: 11px;
     overflow: hidden;
     cursor: pointer;
@@ -131,17 +130,19 @@ html::-webkit-scrollbar-thumb {
   display: none;
 }
     .btn {
+        position: absolute;
         padding: 12px 30px;
         background: var(--orange);
         color: #FFF;
         text-transform: uppercase;
         border-radius: 24px;
-        text-align: center;
-        font-size: 12px;
+        /* font-size: 12px; */
+        font-size: 20px;
         transition: all .2s ease-in-out;
     }
-    .btn {
+    .hero .wrapper .btn {
         font-size: 20px;
+        bottom: 300px;
     }
 
 }
@@ -385,11 +386,12 @@ nav ul li a:active {
    
 }
 .box1 .wrapper .phrase {
+    width: calc( 100% - 80px);
     position: absolute;
-    align-items: flex-end;
-    margin-left: 40px;
-    margin-top: 274px;
+    left: 40px;
     z-index: 2;
+    bottom: 0;
+    
 }
 .box1 .wrapper .box2 .phrase h3 {
     font-size: 30px;
@@ -418,10 +420,6 @@ nav ul li a:active {
     background-color: #fff;
  }
 
-.box1 .wrapper .box2 .phrase .btn {
-    margin-left: -111px;
-    z-index: 35;
-}
 .hero h1 {
     font-size: 40px;
     text-align: center;
@@ -435,7 +433,11 @@ nav ul li a:active {
         color: var(--black);
     }
     .box1 .wrapper .box2 .phrase .btn {
-        margin-left: -56px;
+        
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(50%);
         z-index: 2;
     }
 }
@@ -489,14 +491,7 @@ background: linear-gradient(180deg, #E5E5EC  0%, rgba(208,208,220,0.809961484593
     }
 }
 
-.text-image-left .text-content .main-content p {
-    margin-bottom: 10px;
-    font-family: mose;
-    color: var(--black);
-    width: 263px;
-    line-height: 28px;
-    font-size: 16px;
-}
+
 
 
 .text-image-left .text-image-content h1 {
@@ -663,6 +658,7 @@ img {
         font-size: 8px;
         z-index: 100;
         overflow: hidden;
+
     }
 
     .pics .card .texto p {
@@ -697,7 +693,7 @@ img {
 
 @media only screen and (min-width:960px) {
     .card {
-        min-width: 15%;
+        min-width: 13%;
         height: 100%;
         border-radius: 20px;
         display: flex;
@@ -705,7 +701,7 @@ img {
         flex-grow: 1;
         cursor: pointer;
         position: relative;
-        transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) ease-in-out;
         --transition-timing: 0.25s;
     }
 }
@@ -811,7 +807,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100px;
+    height: 100%;
     z-index: -1;
     /* background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7)); */
     background: transparent linear-gradient(180deg, #06084300 0%, #060843 100%);
@@ -859,8 +855,8 @@ img {
     z-index: 1000;
 }
 
-.pics .card .texto {
-    z-index: 1000;
+.pics .card .card-content {
+    width: calc(100% - 80px);
 }
 
 .pics .card .texto h1 {
@@ -898,7 +894,9 @@ img {
 }
 
 .pics .card a {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(10px);
     display: inline-block;
     margin-left: 56px;
     background-color: var(--orange);
@@ -961,6 +959,7 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
     margin-top: 30px;
 }
 .patern .quote {
+    position: absolute;
     display: block;
    font-size: 220px;
    line-height: 0px;
@@ -1001,6 +1000,8 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
       
     }
     .patern .patern-text h2{
+        position: relative;
+        z-index: 3;
         display: inline-block;
         font-size: 50px;
         /* max-width: 611px; */
@@ -1182,6 +1183,14 @@ ul{
 }
 
 @media(max-width: 767px){
+    .text-image-left .text-content .main-content p {
+        margin-bottom: 10px;
+        font-family: mose;
+        color: var(--black);
+        width: 263px;
+        line-height: 28px;
+        font-size: 16px;
+    }
     .wrapper .text-image-left .text-content h1{
         color: var(--black);
     }
