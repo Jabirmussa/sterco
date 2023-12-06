@@ -73,7 +73,7 @@ html::-webkit-scrollbar-thumb {
 
 
 .btn {
-    position: relative;
+ 
     padding: 11px 16px;
     background: var(--orange);
     color: #FFF;
@@ -130,7 +130,7 @@ html::-webkit-scrollbar-thumb {
   display: none;
 }
     .btn {
-        position: absolute;
+        /* position: absolute; */
         padding: 12px 30px;
         background: var(--orange);
         color: #FFF;
@@ -171,7 +171,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 header {
-    background: #fff;
+   
     width: 100%;
     height: 80px;
     display: flex;
@@ -187,6 +187,7 @@ header {
 
 
 .headeractive{
+    background: #fff;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
 }
@@ -331,38 +332,46 @@ nav ul li a:active {
 .hero2 .wrapper{
     display: block;
 }
-.box1 {
-    /* background: rgb(255,255,255); */
-/* background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 50%, rgba(208,208,220,1) 100%); */
+.overview{
     position: relative;
     z-index: 2;
 }
-/* .box1::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    height: 505px;
-    background: rgb(208,208,220);
-    background: linear-gradient(-180deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.3225665266106442) 100%);
-} */
 
-.box1 .wrapper{
+.overview .wrapper{
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 16px;
     padding-top: 40px;
 }
 
+@media only screen and (min-width: 961px){
+    .overview .overview-items {
+        display: grid;
+        grid-template: 1fr 1fr;
+        column-gap: 16px;
+    }
+
+    .overview .wrapper .overview-item .phrase p{
+        color: #fff;
+        font-family: mose;
+        font-size: 10px;
+        text-align: left;
+        margin: 18px 0;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+}
+
 
 @media only screen and (min-width:960px) {
-    .box1 .wrapper{
+    .overview .wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 16px;
         padding-top: 40px;
     }
-    .box1 .wrapper .box2 .phrase p{
+
+    .overview .wrapper .overview-item .phrase p{
         color: #fff;
         font-family: mose;
         font-size: 16px;
@@ -372,7 +381,7 @@ nav ul li a:active {
         margin-bottom: 30px;
     }
 }
-.box1 .wrapper .box2{
+.overview .wrapper .overview-item{
     height: 470px;
     border-radius: 5px;
     background: transparent linear-gradient(180deg, #06084300 0%, #060843 100%) 0% 0%;
@@ -385,7 +394,7 @@ nav ul li a:active {
     /* overflow: hidden; */
    
 }
-.box1 .wrapper .phrase {
+.overview .wrapper .phrase {
     width: calc( 100% - 80px);
     position: absolute;
     left: 40px;
@@ -393,13 +402,13 @@ nav ul li a:active {
     bottom: 0;
     
 }
-.box1 .wrapper .box2 .phrase h3 {
+.overview .wrapper .overview-item .phrase h3 {
     font-size: 30px;
     text-align: left;
     color: #fff;
     text-transform: uppercase;
 }
-.box1 .wrapper .box2 .phrase p{
+.overview .wrapper .overview-item .phrase p{
     color: #fff;
     font-family: mose;
     font-size: 14px;
@@ -409,12 +418,12 @@ nav ul li a:active {
     margin-bottom: 30px;
 }
 
-.box1 .wrapper .box2 .phrase .btn a{
+.overview .wrapper .overview-item .phrase .btn a{
    color: #fff;
    margin-top: 50px;
 }
 
-.box1 .wrapper .box2 .phrase .btn:hover{
+.overview .wrapper .overview-item .phrase .btn:hover{
     color: var(--orange);
     margin-top: 50px;
     background-color: #fff;
@@ -432,7 +441,7 @@ nav ul li a:active {
         line-height: 92px;
         color: var(--black);
     }
-    .box1 .wrapper .box2 .phrase .btn {
+    .overview .wrapper .overview-item .phrase .btn {
         
         position: absolute;
         bottom: 0;
@@ -548,8 +557,6 @@ img {
 
 .cta {
     background: transparent linear-gradient(180deg, #FFFFFF 0%, #E5E5EC 100%) 0% 0% repeat-x;
-    height: 450px;
-    overflow: hidden;
 }
 
 .cta .wrapper {
@@ -563,6 +570,7 @@ img {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0;
+        align-items: center;
     }
 }
 
@@ -574,7 +582,8 @@ img {
     }
 
     .cta .wrapper .image img {
-        margin-top: -125px;
+        position: relative;
+        height: 100%;
     }
 }
 
@@ -693,7 +702,7 @@ img {
 
 @media only screen and (min-width:960px) {
     .card {
-        min-width: 13%;
+        width: 13%;
         height: 100%;
         border-radius: 20px;
         display: flex;
@@ -742,7 +751,7 @@ img {
 .card>.card-content {
     position: absolute;
     left: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
     bottom: -15px;
     transition: var(--transition-timing);
    
@@ -750,11 +759,11 @@ img {
 
 @media only screen and (min-width:960px) {
     .card>.card-content {
-        left: 10px;
+        /* left: 10px;
         right: 10px;
-        overflow: hidden;
+        overflow: hidden; */
         transition: var(--transition-timing);
-        z-index: 10;
+        /* z-index: 10; */
     }
 }    
 
@@ -813,7 +822,7 @@ img {
     background: transparent linear-gradient(180deg, #06084300 0%, #060843 100%);
 }
 
-.box2>.backdrop {
+.overview-item>.backdrop {
     position: relative;
     border-radius: 20px;
     left: 0;
@@ -885,7 +894,7 @@ img {
     overflow: hidden;
 }
 
-.box2 .box-image img {
+.overview-item .box-image img {
     border-radius: 20px;
 }
 
@@ -1302,7 +1311,7 @@ ul{
       grid-template-columns: 1fr;
       margin-bottom: 150px;
     }
-    .box1 {
+    .overview{
         margin-bottom: 86px;
     }
 
