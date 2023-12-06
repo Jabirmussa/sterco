@@ -107,7 +107,7 @@ html::-webkit-scrollbar-thumb {
     .nav .navCloseBtn {
       position: absolute;
       top: 20px;
-      left: 310px;
+      left: 365px;
       color: var(--black);
       font-size: 40px;
       cursor: pointer;
