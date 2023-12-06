@@ -73,7 +73,6 @@ html::-webkit-scrollbar-thumb {
 
 
 .btn {
- 
     padding: 11px 16px;
     background: var(--orange);
     color: #FFF;
@@ -84,10 +83,6 @@ html::-webkit-scrollbar-thumb {
     cursor: pointer;
     z-index: 1; /* Ensure the button content is above the arrow */
 }
-
-
-
-
  
 @media screen and (max-width: 768px) {
 
