@@ -942,8 +942,6 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
     /* background: transparent linear-gradient(360deg, #FFFFFF 0%, #E5E5EC 100%) 0% 0% no-repeat; */
  }
 
-
-
 .patern {
     position: relative;
     margin-top: -150px;
@@ -979,23 +977,6 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
     margin-left: 0px;
     width: 93%;
 }
-.test{
-    position: relative;
-    height: 100vh;
-    background: var(--grey) url(/assets/images/pattern.svg) repeat left top;
-    background-size: 50px 38px;
-}
-
-.test::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;    
-    width: 100%;
-    height: 30vh;
-    background: rgb(208,208,220);
-    background: linear-gradient(180deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0) 100%);
-}
 
 @media only screen and (min-width:960px) {
 
@@ -1018,9 +999,10 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
         text-align: left;
     }
     .patern .patern-text {
+        right: 149px;
         position: relative;
-        margin: 189px; 
-        top: 115px; 
+        margin: 152px;
+        top: 77px;
      }
      .patern {
         width: 1941px;
