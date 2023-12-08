@@ -95,8 +95,8 @@ html::-webkit-scrollbar-thumb {
       padding-top: 100px;
       /* row-gap: 30px; */
       flex-direction: column;
-      background-image: url(/assets/images/pattern.svg);
-      background-color: var(--orange);
+      background-image: url(/assets/images/shape.riv);
+      /* background-color: var(--orange); */
       background-size:contain;
       background-position: center;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -378,8 +378,9 @@ nav ul li a:active {
         margin-bottom: 30px;
     }
 }
+
 .overview .wrapper .overview-item{
-    width: 348px;
+    
     background: transparent linear-gradient(180deg, #06084300 0%, #060843 100%) 0% 0%;
     border-radius: 20px;
     background-repeat: no-repeat;
