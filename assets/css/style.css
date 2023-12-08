@@ -465,7 +465,6 @@ nav ul li a:active {
     .text-image .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 0;
     }
 }
 
@@ -499,9 +498,6 @@ nav ul li a:active {
         text-align: left;
     }
 }
-
-
-
 
 .text-image-left .text-image-content h1 {
     font-size: 20px;
@@ -603,13 +599,13 @@ img {
 
 .box>.box-bg {
     position: absolute;
-    top: 0;
+    top: 56px;
     left: 0;
     width: 484px;
     rotate: 10deg;
 }
 .box img {
-    rotate: 352deg;
+    rotate: 354deg;
 }
 
 .box-bg img {
@@ -624,11 +620,9 @@ img {
 
 .box-img {
     height: 525px;
-    clip-path: url(#my-clip-path);
-    transform: matrix(0.99, 0.1, -0.1, 0.99, 7, -53);
+    /* clip-path: url(#my-clip-path);
+    transform: matrix(0.99, 0.1, -0.1, 0.99, 7, -53); */
 }
-
-/* card Hover */
 
 .pics {
    
@@ -691,14 +685,12 @@ img {
     .pics .card .texto a {
         font-size: 16px;
     }
-
 }
 
 .pics .card .btn.btn:hover{
     color: var(--orange);
     background-color: #fff;
 }
-
 
 @media only screen and (min-width:960px) {
     .card {
@@ -717,7 +709,6 @@ img {
 
 .card.active {
     flex-grow: 100;
-
 }
 
 .card>.background {
@@ -833,8 +824,6 @@ img {
     /* background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7)); */
     background: transparent linear-gradient(180deg, #06084300 0%, #060843 100%);
 }
-
-/* fim Card Hover*/
 
 /* parte de  */
 .text {
@@ -1011,10 +1000,10 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
         text-align: left;
     }
     .patern .patern-text {
-        right: 149px;
+        right: 11px;
         position: relative;
         margin: 152px;
-        top: 77px;
+        top: 90px;
      }
      .patern {
         width: 1941px;
