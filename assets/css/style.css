@@ -78,13 +78,12 @@ html::-webkit-scrollbar-thumb {
     color: #FFF;
     text-transform: uppercase;
     border-radius: 24px;
-   
     overflow: hidden;
     cursor: pointer;
     z-index: 1; /* Ensure the button content is above the arrow */
 }
  
-@media screen and (max-width: 768px) {
+@media (min-width:320px) and (max-width: 767px) {
     .nav {
       position: fixed;
       top: 0;
@@ -95,9 +94,10 @@ html::-webkit-scrollbar-thumb {
       padding-top: 100px;
       /* row-gap: 30px; */
       flex-direction: column;
-      background-image: url(/assets/images/shape.riv);
+      background-image: url(/giphy.gif);
       /* background-color: var(--orange); */
-      background-size:contain;
+      background-size:cover;
+      background-repeat: no-repeat;
       background-position: center;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       transition: all 0.4s ease;
@@ -317,6 +317,9 @@ nav ul li a:active {
         font-size: 50px;
         color: var(--black);
     }
+    .nav .navCloseBtn {
+        display: none;
+      }
 }
 
 .hero .wrapper {
@@ -341,7 +344,7 @@ nav ul li a:active {
     padding-top: 40px;
 }
 
-@media only screen and (min-width: 961px){
+@media only screen and (min-width: 767px){
     .overview .overview-items {
         display: grid;
         grid-template: 1fr 1fr;
@@ -357,10 +360,50 @@ nav ul li a:active {
         line-height: 28px;
         margin-bottom: 30px;
     }
+    .patern {
+        position: relative;
+        margin-top: 50px;
+        background: var(--grey) url(/assets/images/pattern-sterco.svg) repeat left top;
+        width: 100vw;
+    }
+
+    .patern::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20vh;
+        background: rgb(208,208,220);
+        background: linear-gradient(180deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0) 100%);
+    }
 }
 
+@media (min-width:768px) and (max-width:860px) {
+    .overview .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px;
+        padding-top: 40px;
+        margin-bottom: 200px;
+    }
+
+    .nav .navCloseBtn {
+        display: none;
+      }
+
+    footer .footer-col {
+        /* width: 20%; */
+        margin: 0px 10px;
+    }
+
+
+}
 
 @media only screen and (min-width:960px) {
+    .nav .navCloseBtn {
+        display: none;
+      }
     .overview .wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -681,7 +724,7 @@ img {
         font-family: meu;
         padding-left: 56px;
         width: 345px;
-        color: var(--orange);
+        color: #fff;
     }
     .pics .card .texto a {
         font-size: 16px;
@@ -870,17 +913,22 @@ img {
         color: #FFFFFF;
         font-size: 30px;
     }
+
+    .pics .card .card-content {
+        width: calc(100% - 80px);
+    }
+    
+    .pics .card .texto p {
+        margin: 6px;
+        padding-left: 50px;
+        width: 360px;
+        height: 100px;
+        color: #fff;
+        margin-bottom: 45px;
+    }
 }
 
 
-.pics .card .texto p {
-    margin: 6px;
-    padding-left: 50px;
-    width: 360px;
-    height: 100px;
-    color: #fff;
-    margin-bottom: 45px;
-}
 
 .pics .card .texto p span {
     text-align: left;
@@ -1012,7 +1060,7 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
 }
 
 .patern .patern-text p{
-    font-size: 10px;
+    font-size: 16px;
     font-family: mose;
     font-weight: bold;
     color: var(--black);
@@ -1156,6 +1204,7 @@ ul{
     height: 80px;
    
 }
+
 .copyright .wrapper p{
    
     font-size: 14px;
@@ -1168,6 +1217,7 @@ ul{
         width: 359px;
         clip-path: url(#my-clip-path);
 }
+
 .text-image-left .box-btn .btn:hover {
     background-color: var(--black);
 }
@@ -1202,7 +1252,7 @@ ul{
         /* max-width: calc(33.3333% - 20px); */
         /* flex: 1;
         margin: 10px; */
-        margin-bottom: 20px;
+        margin-bottom: 35px;
         cursor: pointer;
         position: relative;
         transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -1239,41 +1289,57 @@ ul{
 }
 
 .text-image-right {
-    margin-left: -6px;
+    left: -6px;
+    position: relative;
+    top: 93px;
 }
-/* .box-img {
-    height: 381px;
-    width: 359px;
-    clip-path: url(#my-clip-path);
-} */
+
 .box-bg img {
     width: 400px;
     height: 517px;
     transform: matrix(0.9, -0.31, 0.31, 0.95, -56, -58);
 }
 
+#triangle {
+    top: -23px;
+}
+
 #triangle img {
-    width: 395px;
-    height: 517px;
-    transform: matrix(0.9, -0.3, 0.31, 0.95, -57, -87);
+    width: 450px;
+    height: 466px;
+    transform: matrix(0.89, -0.3, 0.3, 0.95, -112, -87);
 }
 
 .shape-mobile {
-    height: 319px;
+    position: relative;
+    top: -28px;
+    left: -23px;
+    rotate: 334deg;
+    height: 343px;
     width: 274px;
     clip-path: url(#my-clip-path);
 }
 
 }
 @media(max-width: 574px){
-    /* .cta.wrapper .image img {
-        display: none;
-    } */
+
+    .box>.box-bg img {
+        position: absolute;
+        top: -46px;
+        left: 41px;
+        width: 356px;
+        rotate: 10deg;
+    }
+
+    .overview .wrapper .overview-item .phrase h3 {
+        font-size: 26px;
+    }
+
   .footer-col{
     width: 100%;
 }
 .slide-1 {
-    margin-bottom: 750px;
+    margin-bottom: 780px;
 }
 
 .pics .card a {
@@ -1286,6 +1352,13 @@ ul{
     color: #fff;
     font-family: meu;
     font-size: 20px;
+}
+
+.box img {
+    top: 27px;
+    position: relative;
+    width: 293px;
+    rotate: 354deg;
 }
 }
 

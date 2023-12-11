@@ -63,6 +63,12 @@ cardsContainer.addEventListener("mouseout", () => {
 
 
 
+    new rive.Rive({
+        src: '/assets/images/shape.riv',
+        canvas: document.getElementById('canvas'),
+        autoplay: true,
+    });
+
 
 
 // // GSAP
