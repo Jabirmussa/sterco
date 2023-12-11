@@ -448,14 +448,14 @@ nav ul li a:active {
     color: #fff;
     text-transform: uppercase;
 }
-.overview .wrapper .overview-item .phrase p{
+.overview .wrapper .overview-item .phrase p {
     color: #fff;
     font-family: mose;
-    font-size: 14px;
+    /* font-size: 14px; */
     text-align: left;
     margin: 18px 0;
     line-height: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 56px;
 }
 
 .overview .wrapper .overview-item .phrase .btn a{
@@ -566,6 +566,65 @@ nav ul li a:active {
 
 .text-image-left .text-content p {
     font-size: 16px;
+    font-family: mose;
+    color: #060843;
+}
+
+@media only screen and (min-width: 768px){
+    .text-image-left .text-content p {
+        font-size: 20px;
+        font-family: mose;
+        margin-bottom: 30px;
+        width: 50%;
+    }
+
+    .text-image-right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        /* font-size: 80px; */
+        text-align: center;
+        color: var(--black);
+    }
+
+    .text-image-left .text-content h1 {
+        /* font-size: 35px; */
+        color: #060843;
+
+    }
+
+    .hero2 .wrapper p {
+        color: #060843;
+        line-height: 28px;
+    }
+    
+    .patern .patern-text {
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .cta .wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cta .wrapper .information h3 {
+        text-transform: none;
+        font-size: 32px;
+        width: 144%;
+        margin-bottom: 20px;
+        color: var(--black);
+        font-weight: lighter;
+    }
+
+    .row {
+        display: flex;
+        /* flex-wrap: wrap; */
+    }
+
+  
 }
 
 @media only screen and (min-width:960px) {
@@ -620,11 +679,12 @@ img {
 @media only screen and (min-width:960px) {
     .cta .wrapper .image {
        display: block;
+       position: relative;
+       right: 30px;
     }
 
     .cta .wrapper .image img {
-        position: relative;
-        height: 100%;
+        margin-top: -71px;
     }
 }
 
@@ -752,7 +812,7 @@ img {
 }
 
 .card.active {
-    flex-grow: 100;
+    flex-grow: 23;
 }
 
 .card>.background {
@@ -994,7 +1054,7 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
 
 .patern {
     position: relative;
-    margin-top: -150px;
+    margin-top: -119px;
     background: var(--grey) url('/assets/images/pattern-sterco.svg') repeat left top;
     width: 100vw;
 }
@@ -1043,13 +1103,13 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
         font-size: 50px;
         color: var(--black);
         letter-spacing: 0px;
-        left: 90px;
+        left: 106px;
         width: 611px;
-        top: 30px;
+        top: 8px;
         text-align: left;
     }
     .patern .patern-text {
-        right: 11px;
+        right: 110px;
         position: relative;
         margin: 152px;
         top: 90px;
@@ -1072,10 +1132,10 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
         position: relative;
         font-size: 16px;
         font-family: mose;
-        font-weight: bolder;
+        font-weight: bold;
         color: var(--black);
         left: 380px;
-        top: 25px;
+        top: 11px;
         overflow: hidden;
         width: 30%;
     }
@@ -1123,7 +1183,7 @@ ul{
 }
 .footer{
 	background-color: var(--black);
-    padding: 70px 0;
+    padding: 104px 0;
 }
 .footer-col{
    width: 25%;
@@ -1152,6 +1212,13 @@ ul{
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
+
+.footer-col:nth-child(3) li a,.footer-col:nth-child(4) li a {
+    margin-bottom: 1px;
+    text-decoration: underline;
+  }
+  
+  
 .footer-col ul li a{
 	font-size: 16px;
 	color: #ffffff;
@@ -1164,25 +1231,6 @@ ul{
 .footer-col ul li a:hover{
 	color: #ffffff;
 	padding-left: 8px;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-    font-family: mose;
-}
-
-
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
 }
 
 .wrapper .logo img {
@@ -1283,6 +1331,19 @@ ul{
     .wrapper .information {
         margin-top: 148px;
     }
+
+    .cta .wrapper .image {
+        height: 9px;
+    }
+
+    .cta .wrapper .image img{
+        position: relative;
+        top: -170px;
+        left: 154px;
+        border-radius: 100%;
+        width: 150px;
+    }
+
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
