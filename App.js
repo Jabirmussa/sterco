@@ -30,9 +30,47 @@ window.addEventListener("scroll",()=>{
      
 })
 
+// const cardsContainer = document.querySelector(".pics");
+// let activeIndex = 0;
+
+// function resetCardContentOpacity() {
+//  const allCards = cardsContainer.querySelectorAll(".card");
+//  allCards.forEach((card) => {
+//     card.querySelector(".card-content").style.opacity = 1;
+//  });
+// }
+
+// cardsContainer.addEventListener("mouseover", (e) => {
+//  const target = e.target.closest(".card");
+
+//  if (!target) return;
+
+//  const allCards = cardsContainer.querySelectorAll(".card");
+//  const targetIndex = Array.from(allCards).indexOf(target);
+
+//  if (activeIndex !== targetIndex) {
+//     allCards[activeIndex].classList.remove("active");
+
+//     target.classList.add("active");
+
+//     activeIndex = targetIndex;
+//  }
+
+//  resetCardContentOpacity();
+// });
+
+// cardsContainer.addEventListener("mouseout", () => {
+//  const allCards = cardsContainer.querySelectorAll(".card");
+
+//  allCards.forEach((card) => {
+//     card.classList.remove("active");
+//  });
+
+//  allCards[activeIndex].classList.add("active");
+// });
 
 const cardsContainer = document.querySelector(".pics");
-
+let activeIndex = 0;
 cardsContainer.addEventListener("mouseover", (e) => {
   const target = e.target.closest(".card");
 
@@ -54,7 +92,7 @@ cardsContainer.addEventListener("mouseout", () => {
   
   cardsContainer.querySelectorAll(".card").forEach((card) => {
     card.classList.remove("card-content");
-    cardContent.style.opacity = 1;
+    cardContent.style.opacity = 0;
   });
   cardsContainer.querySelectorAll(".card-content").forEach((cardContent) => {
     cardContent.style.opacity = 1;
