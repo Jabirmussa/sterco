@@ -35,13 +35,13 @@
 }
 
 body {
-    
     overflow-x: hidden;
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(208,208,220) 50%, rgb(213 213 224) 100%);
 }
 
 body.nav-open {
     overflow: hidden;
+    height: 100vh;
 }
 
 
@@ -83,7 +83,7 @@ html::-webkit-scrollbar-thumb {
     z-index: 1; /* Ensure the button content is above the arrow */
 }
  
-@media (min-width:320px) and (max-width: 767px) {
+@media (min-width:320px) and (max-width: 500px) {
     .nav {
       position: fixed;
       top: 0;
@@ -105,7 +105,7 @@ html::-webkit-scrollbar-thumb {
     .nav .navCloseBtn {
       position: absolute;
       top: 20px;
-      left: 294px;
+      right: 22px;
       color: var(--black);
       font-size: 40px;
       cursor: pointer;
@@ -133,8 +133,7 @@ html::-webkit-scrollbar-thumb {
         transition: all .2s ease-in-out;
     }
     .hero .wrapper .btn {
-        font-size: 20px;
-        bottom: 300px;
+        padding-bottom: 10px;
     }
 }
 
@@ -285,7 +284,7 @@ nav ul li a:active {
 }
 
 .hero2 .wrapper h2 {
-    font-size: 28px;
+    font-size: 35px;
     color: var(--black);
 }
 
@@ -294,10 +293,9 @@ nav ul li a:active {
 }
 
 .hero2 .wrapper p {
-    font-size: 12px;
     font-family: mose;
     margin-top: 14px;
-    width: 280px;
+    width: 100%;
     line-height: 18px;
 }
 
@@ -309,7 +307,6 @@ nav ul li a:active {
     .hero2 .wrapper p {
         font-size: 16px;
         font-family: mose;
-        margin-top: 14px;
         width: 430px;
         line-height: 28px;
         font-weight: lighter;
@@ -329,7 +326,7 @@ nav ul li a:active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
 }
 .hero2 .wrapper{
     display: block;
@@ -343,7 +340,6 @@ nav ul li a:active {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 16px;
-    padding-top: 40px;
 }
 
 @media only screen and (min-width: 767px){
@@ -381,28 +377,24 @@ nav ul li a:active {
     }
 }
 
-@media (min-width:768px) and (max-width:860px) {
+
+@media (min-width:769px) and (max-width:997px) {
     .overview .wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 16px;
-        padding-top: 40px;
         margin-bottom: 200px;
     }
-
     .nav .navCloseBtn {
         display: none;
       }
-
     footer .footer-col {
         /* width: 20%; */
         margin: 0px 10px;
     }
-
-
 }
 
-@media only screen and (min-width:960px) {
+@media only screen and (min-width: 998px) {
     .nav .navCloseBtn {
         display: none;
       }
@@ -410,7 +402,6 @@ nav ul li a:active {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 16px;
-        padding-top: 40px;
     }
 
     .overview .wrapper .overview-item .phrase p{
@@ -453,7 +444,7 @@ nav ul li a:active {
 .overview .wrapper .overview-item .phrase p {
     color: #fff;
     font-family: mose;
-    /* font-size: 14px; */
+    font-size: 16px;
     text-align: left;
     margin: 18px 0;
     line-height: 28px;
@@ -476,6 +467,18 @@ nav ul li a:active {
     text-align: center;
     color: var(--black);
 }
+@media only screen and (max-width:1257px) {
+    .overview .wrapper .overview-item .phrase .btn {
+        font-size: 14px;
+        padding: 13px;
+    }
+    .overview .wrapper .overview-item .phrase h3 {
+        font-size: 22px;
+        text-align: left;
+        color: #fff;
+        text-transform: uppercase;
+    }
+}
 
 @media only screen and (min-width:960px) {
     .hero h1 {
@@ -487,12 +490,12 @@ nav ul li a:active {
         font-weight: lighter;
     }
     .overview .wrapper .overview-item .phrase .btn {
-        
         position: absolute;
         bottom: 0;
         left: 0;
         transform: translateY(50%);
         z-index: 2;
+       
     }
 }
 
@@ -572,14 +575,25 @@ nav ul li a:active {
     color: #060843;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 960px) {
+    
+    .patern .patern-text {
+        position: relative;
+        padding: 145px 26px 180px 136px;
+    }
+}
+
+@media only screen and (min-width: 766px){
     .text-image-left .text-content p {
         font-size: 20px;
         font-family: mose;
         margin-bottom: 30px;
-        width: 50%;
+        width: 100%;
+        line-height: 28px;
     }
-
+    .nav .navCloseBtn {
+        display: none;
+      }
     .text-image-right {
         display: flex;
         justify-content: center;
@@ -594,17 +608,20 @@ nav ul li a:active {
     .text-image-left .text-content h1 {
         /* font-size: 35px; */
         color: #060843;
+        margin-bottom: 15px;
 
     }
 
     .hero2 .wrapper p {
         color: #060843;
         line-height: 28px;
+        margin-bottom: 40px;
     }
     
     .patern .patern-text {
         position: relative;
         margin-top: 30px;
+        padding: 0px 50px 20px 30px;
     }
 
     .cta .wrapper {
@@ -637,6 +654,8 @@ nav ul li a:active {
     .text-image-right {
         margin-left: 64px;
     }
+    
+
 }
 
 img {
@@ -791,6 +810,8 @@ img {
     .pics .card .texto a {
         font-size: 16px;
     }
+
+  
 }
 
 .pics .card .btn.btn:hover{
@@ -798,7 +819,7 @@ img {
     background-color: #fff;
 }
 
-@media only screen and (min-width:960px) {
+@media only screen and (min-width:767px) {
     .card {
         width: 13%;
         height: 100%;
@@ -810,9 +831,33 @@ img {
         position: relative;
         transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) ease-in-out;
         --transition-timing: 0.25s;
+        margin-top: -90px;
     }
+    
+    .slide-1 .card .card-content .texto .title {
+        color: #FFF;
+        margin-left: 56px;
+    }
+    .pics .card .texto p {
+        margin: 6px;
+        padding-left: 50px;
+        width: 360px;
+        height: 100px;
+        color: #fff;
+        margin-bottom: 45px;
+    }
+
 }
 
+@media (max-width: 770px){
+    .cta .wrapper .image img {
+        position: relative;
+        top: -170px;
+        left: 260px;
+        border-radius: 100%;
+        width: 150px;
+    }
+}
 .card.active {
     flex-grow: 23;
 }
@@ -940,6 +985,7 @@ img {
     font-weight: lighter;
     color: var(--black);
     font-size: 25px;
+    margin-bottom: 105px;
 }
 
 @media only screen and (min-width:960px) {
@@ -947,9 +993,10 @@ img {
         text-align: left;
         color: var(--black);
         font-size: 50px;
-        line-height: 90px;
+        line-height: 40px;
         letter-spacing: 0;
         font-weight: lighter;
+        margin-bottom: 122px;
     }
 }
 .text span {
@@ -970,7 +1017,6 @@ img {
     
     .pics .card .texto h1 {
         font-family: meu;
-        padding-left: 56px;
         /* width: 345px; */
         color: #FFFFFF;
         font-size: 30px;
@@ -988,6 +1034,14 @@ img {
         color: #fff;
         margin-bottom: 45px;
     }
+}
+
+.overview .wrapper .overview-item .phrase .btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(50%);
+    z-index: 2;
 }
 
 
@@ -1056,7 +1110,6 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
 
 .patern {
     position: relative;
-    margin-top: -119px;
     background: var(--grey) url('/assets/images/pattern-sterco.svg') repeat left top;
     width: 100vw;
 }
@@ -1064,7 +1117,7 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
 .patern::before{
     position: absolute;
     content: "";
-    top: 0;
+    top: -2px;
     left: 0;
     width: 100%;
     height: 50vh;
@@ -1072,14 +1125,11 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
     background: linear-gradient(180deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0) 100%);
 }
 
-.patern .patern-text {
-    margin-top: 30px;
-}
 .patern .quote {
     position: absolute;
     display: block;
    font-size: 220px;
-   line-height: 0px;
+   line-height: 28px;
    color: var(--orange);
 }
 
@@ -1087,7 +1137,6 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
     font-size: 50px;
     color: var(--black);
     margin-left: 0px;
-    width: 93%;
 }
 
 @media only screen and (min-width:960px) {
@@ -1106,19 +1155,13 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
         font-size: 50px;
         color: var(--black);
         letter-spacing: 0px;
-        left: 109px;
-        width: 611px;
-        top: -37px;
         text-align: left;
+        padding-left: 100px;
     }
+
     .patern .patern-text {
-        right: 110px;
         position: relative;
-        margin: 152px;
-        top: 90px;
-     }
-     .patern {
-        width: 1941px;
+        padding: 0px 156px 180px 214px;
      }
 }
 
@@ -1130,7 +1173,7 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
     overflow: hidden;
 }
 
-@media only screen and (min-width:960px) {
+@media(min-width:960px) {
     .patern .patern-text p{
         position: relative;
         font-size: 17px;
@@ -1138,10 +1181,8 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
         font-family: mose;
         font-weight: bold;
         color: var(--black);
-        left: 380px;
-        top: -35px;
+        padding-left: 380px;
         overflow: hidden;
-        width: 30%;
     }
 }
 
@@ -1362,6 +1403,7 @@ ul{
         transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
         --transition-timing: 0.25s;
     }    
+ 
 
     .pics .card .texto {
         margin-left: -50px;
@@ -1379,10 +1421,13 @@ ul{
     .patern .quote {
         display: block;
         font-size: 140px;
+        line-height: 0;
+        margin-left: -8px;
     }
 
     .patern .patern-text h2 {
-        font-size: 38px;
+        margin-top: 20px;
+        font-size: 34px;
     }
     .wrapper .information {
         margin-top: 148px;
@@ -1447,6 +1492,9 @@ ul{
         width: 356px;
         rotate: 10deg;
     }
+    .card .card-content {
+        opacity: 1;
+    }
 
     .overview .wrapper .overview-item .phrase h3 {
         font-size: 26px;
@@ -1496,7 +1544,8 @@ ul{
     }
     .hero2 .wrapper p {
         color: var(--black);
-        font-size: 15px;
+        font-size: 14px;
+        margin-bottom: 20px;
     }
     .hero{
         margin-top: 50px;

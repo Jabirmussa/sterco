@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const Header = document.querySelector("header")
 window.addEventListener("scroll",()=>{
-  console.log('scrolling')
   console.log(window.scrollY)
   if(window.scrollY>0){
      Header.classList.add("headeractive")
