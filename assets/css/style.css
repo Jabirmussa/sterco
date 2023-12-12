@@ -1484,6 +1484,12 @@ ul{
 
 }
 @media(max-width: 574px){
+    .text h1 {
+        font-weight: lighter;
+        color: var(--black);
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
 
     .box>.box-bg img {
         position: absolute;
