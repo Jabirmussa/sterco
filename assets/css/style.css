@@ -1146,7 +1146,7 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
         position: relative;
         right: 1px;
        font-size: 200px;
-       line-height: 50px;
+       line-height: 5px;
        color: var(--orange);
     }
     .patern .patern-text h2{
@@ -1162,7 +1162,7 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
 
     .patern .patern-text {
         position: relative;
-        padding: 0px  325px 196px 258px;
+        padding: 38px  325px 196px 258px;
  
     }
 }

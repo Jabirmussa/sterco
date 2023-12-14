@@ -29,6 +29,24 @@ window.addEventListener("scroll",()=>{
      
 })
 
+function function5() {
+	swal({
+	  title: "Are you sure?",
+	  text: "Once deleted, you will not be able to recover this file!",
+	  icon: "warning",
+	  buttons: true,
+	  dangerMode: true,
+	})
+	.then((willDelete) => {
+	  if (willDelete) {
+		swal("Poof! you did nothing", {
+		  icon: "success",
+		});
+	  } else {
+		swal("Your file is safe!");
+	  }
+	});
+}
 // const cardsContainer = document.querySelector(".pics");
 // let activeIndex = 0;
 
