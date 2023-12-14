@@ -32,7 +32,7 @@ window.addEventListener("scroll",()=>{
 function function5() {
 	swal({
 	  title: "Are you sure?",
-	  text: "Once deleted, you will not be able to recover this file!",
+	  text: "Sterco!",
 	  icon: "warning",
 	  buttons: true,
 	  dangerMode: true,
