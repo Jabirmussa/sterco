@@ -214,6 +214,9 @@ nav ul li a:hover,
 nav ul li a:active {
     color: var(--grey);
 }
+.backdrop {
+
+}
 
 .hamburger {
     cursor: pointer;
@@ -811,7 +814,6 @@ img {
     .pics .card .texto a {
         font-size: 16px;
     }
-
   
 }
 
@@ -850,7 +852,7 @@ img {
 
 }
 
-@media (max-width: 770px){
+@media (min-width: 320px) and (max-width: 770px){
     .cta .wrapper .image img {
         position: relative;
         top: -170px;
@@ -902,11 +904,7 @@ img {
 
 @media only screen and (min-width:960px) {
     .card>.card-content {
-        /* left: 10px;
-        right: 10px;
-        overflow: hidden; */
         transition: var(--transition-timing);
-        /* z-index: 10; */
     }
 }    
 
@@ -1383,7 +1381,7 @@ ul{
         margin-bottom: 10px;
         font-family: mose;
         color: var(--black);
-        width: 263px;
+
         line-height: 28px;
         font-size: 16px;
     }
@@ -1430,6 +1428,7 @@ ul{
     .patern .patern-text h2 {
         margin-top: 20px;
         font-size: 34px;
+        width: 65%;
     }
     .wrapper .information {
         margin-top: 148px;
@@ -1438,11 +1437,10 @@ ul{
     .cta .wrapper .image {
         height: 9px;
     }
-
     .cta .wrapper .image img{
         position: relative;
         top: -170px;
-        left: 154px;
+        left: 200px;
         border-radius: 100%;
         width: 150px;
     }
@@ -1484,8 +1482,9 @@ ul{
     clip-path: url(#my-clip-path);
 }
 
+
 }
-@media(max-width: 574px){
+@media(min-width: 600px) and (max-width:765px){
     .text h1 {
         font-weight: lighter;
         color: var(--black);
@@ -1512,9 +1511,7 @@ ul{
     padding: 0;
     width: 100%;
 }
-.slide-1 {
-    margin-bottom: 780px;
-}
+
 
 .pics .card a {
     position: relative;
@@ -1538,6 +1535,9 @@ ul{
 
   @media (max-width: 767px) {
     /* Adjust the grid for smaller screens */
+    .slide-1 {
+        margin-bottom: 780px;
+    }
     .pics {
         display: grid;
       grid-template-columns: 1fr;
@@ -1545,6 +1545,10 @@ ul{
     }
     .overview{
         margin-bottom: 86px;
+    }
+
+    .text h1 {
+        margin-bottom: 15px;
     }
 
     .hero2{
