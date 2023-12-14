@@ -1484,7 +1484,7 @@ ul{
 
 
 }
-@media(min-width: 600px) and (max-width:765px){
+@media (min-width: 600px) and (max-width: 766px) {
     .text h1 {
         font-weight: lighter;
         color: var(--black);
@@ -1525,15 +1525,21 @@ ul{
     font-size: 20px;
 }
 
-.box img {
-    top: 27px;
-    position: relative;
-    width: 293px;
-    rotate: 354deg;
-}
 }
 
-  @media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
+      .box img {
+          top: 27px;
+          position: relative;
+          width: 293px;
+          /* rotate: 354deg; */
+      }
+
+      .text-image-right {
+        left: -6px;
+        position: relative;
+        top: 93px;
+    }
     /* Adjust the grid for smaller screens */
     .slide-1 {
         margin-bottom: 780px;
