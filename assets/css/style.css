@@ -583,7 +583,13 @@ nav ul li a:active {
     }
 }
 
-@media only screen and (min-width: 766px){
+@media (min-width: 700px) {
+    .nav .navCloseBtn {
+        display: none;
+      }
+}
+
+@media only screen and (min-width: 765px){
     .text-image-left .text-content p {
         font-size: 20px;
         font-family: mose;
@@ -591,9 +597,7 @@ nav ul li a:active {
         width: 100%;
         line-height: 28px;
     }
-    .nav .navCloseBtn {
-        display: none;
-      }
+   
     .text-image-right {
         display: flex;
         justify-content: center;
@@ -642,8 +646,6 @@ nav ul li a:active {
         display: flex;
         /* flex-wrap: wrap; */
     }
-
-  
 }
 
 @media only screen and (min-width:960px) {
@@ -654,8 +656,6 @@ nav ul li a:active {
     .text-image-right {
         margin-left: 64px;
     }
-    
-
 }
 
 img {
@@ -698,6 +698,7 @@ img {
 }
 
 @media only screen and (min-width:960px) {
+
     .cta .wrapper .image {
        display: block;
        position: relative;
@@ -1080,7 +1081,7 @@ img {
     font-size: 20px;
 }
 
-@media only screen and(min-width:960px){
+/* @media only screen and (min-width:960px){
     .pics .card a {
         position: relative;
         display: inline-block;
@@ -1093,7 +1094,7 @@ img {
         font-family: meu;
         font-size: 15px;
     }
-} 
+}  */
 
 .pics .card a:hover {
     background-color: var(--black);
@@ -1161,8 +1162,9 @@ background: linear-gradient(360deg, rgba(208,208,220,1) 0%, rgba(208,208,220,0.8
 
     .patern .patern-text {
         position: relative;
-        padding: 0px 156px 180px 214px;
-     }
+        padding: 0px  325px 196px 258px;
+ 
+    }
 }
 
 .patern .patern-text p{
