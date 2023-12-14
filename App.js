@@ -31,7 +31,7 @@ window.addEventListener("scroll",()=>{
 
 function function5() {
 	swal({
-	  title: "Are you sure?",
+	  title: "Alert",
 	  text: "Sterco!",
 	  icon: "warning",
 	  buttons: true,
