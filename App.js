@@ -1,3 +1,12 @@
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader-hidden");
+  loader.addEventListener("trasintionend", ()=> {
+    document.body.removeChild("loader");
+  })
+})
+
 document.addEventListener("DOMContentLoaded", function () {
   const navCheck = document.getElementById("nav_check");
   const navCloseBtn = document.querySelector(".navCloseBtn");
@@ -47,44 +56,6 @@ function function5() {
 	  }
 	});
 }
-// const cardsContainer = document.querySelector(".pics");
-// let activeIndex = 0;
-
-// function resetCardContentOpacity() {
-//  const allCards = cardsContainer.querySelectorAll(".card");
-//  allCards.forEach((card) => {
-//     card.querySelector(".card-content").style.opacity = 1;
-//  });
-// }
-
-// cardsContainer.addEventListener("mouseover", (e) => {
-//  const target = e.target.closest(".card");
-
-//  if (!target) return;
-
-//  const allCards = cardsContainer.querySelectorAll(".card");
-//  const targetIndex = Array.from(allCards).indexOf(target);
-
-//  if (activeIndex !== targetIndex) {
-//     allCards[activeIndex].classList.remove("active");
-
-//     target.classList.add("active");
-
-//     activeIndex = targetIndex;
-//  }
-
-//  resetCardContentOpacity();
-// });
-
-// cardsContainer.addEventListener("mouseout", () => {
-//  const allCards = cardsContainer.querySelectorAll(".card");
-
-//  allCards.forEach((card) => {
-//     card.classList.remove("active");
-//  });
-
-//  allCards[activeIndex].classList.add("active");
-// });
 
 const cardsContainer = document.querySelector(".pics");
 let activeIndex = 0;
