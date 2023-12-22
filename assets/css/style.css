@@ -22,7 +22,6 @@
     --orange: #D96827;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -71,9 +70,6 @@
     }
 }
 
-
-
-
 body {
     overflow-x: hidden;
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(208,208,220) 50%, rgb(213 213 224) 100%);
@@ -110,7 +106,6 @@ html::-webkit-scrollbar-thumb {
     object-fit: cover;
     object-position: center;
 }
-
 
 .btn {
     padding: 11px 16px;
